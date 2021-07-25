@@ -14,7 +14,6 @@ import java.io.Serializable;
 public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)//can also be just IDENTITY
-    @Column(nullable = false, updatable = false)
     private Long id;
     private String name;
     private String email;

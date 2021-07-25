@@ -1,6 +1,7 @@
-package com.tcatapps.employeeManagerApI.Controllers;
+package com.tcatapps.employeeManagerApI.Resources;
 
 
+import com.tcatapps.employeeManagerApI.Middlewares.AuthMiddleware;
 import com.tcatapps.employeeManagerApI.Models.Employee;
 import com.tcatapps.employeeManagerApI.Services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,13 +13,15 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/employee")
+@RequestMapping("api/employee")
 public class EmployeeController {
     private final EmployeeService employeeService;
+
 
     @Autowired
     public EmployeeController(EmployeeService employeeService) {
         this.employeeService = employeeService;
+
     }
 
     // Generates an HTTP response an the Inner Generic type is going to be in the body
@@ -35,6 +38,7 @@ public class EmployeeController {
 
     @PostMapping("/add")
     public ResponseEntity<Employee> addEmployee(@RequestBody Employee employee){
+        System.out.println("Incoming employee " + employee);
         return new ResponseEntity<>(employeeService.addEmployee(employee), HttpStatus.CREATED);
     }
 

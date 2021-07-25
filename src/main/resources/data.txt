@@ -1,0 +1,40 @@
+{
+"email":"email1@email.com",
+"imageUrl":"https://bootdey.com/img/Content/avatar/avarar_1",
+"jobTitle":"JavaScript",
+"name":"Daniel Craig",
+"phone" : "123451"
+}
+
+{
+"email":"email2@email.com",
+"imageUrl":"https://bootdey.com/img/Content/avatar/avarar_2",
+"jobTitle":"UI/UX",
+"name":"Christian Smith",
+"phone" : "123452"
+}
+
+{
+"email":"email3@email.com",
+"imageUrl":"https://bootdey.com/img/Content/avatar/avarar_3"
+"jobTitle":"Java",
+"name":"Dave Rogers",
+"phone" : "123453"
+}
+
+{
+"email":"email4@email.com",
+"imageUrl":"https://bootdey.com/img/Content/avatar/avarar_4",
+"jobTitle":"TypeScript",
+"name":"John Mayers",
+"phone" : "123454"
+}
+
+
+{
+"email":"email5@email.com",
+"imageUrl":"https://bootdey.com/img/Content/avatar/avarar_5",
+"jobTitle":"Docker",
+"name":"John Mayers",
+"phone" : "123454"
+}
